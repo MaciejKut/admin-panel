@@ -1,0 +1,67 @@
+.leftNav {
+    background-color: $bg-color1;
+    color: $aside-font-color;
+
+    .leftNavHeader {
+        padding: 20px 20px 20px;
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+
+            .hamburger {
+                padding-top: 3px;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+        }
+
+    }
+
+    .navigation {
+        ul {
+            display: block;
+            padding: 0;
+
+            .menuItem {
+                display: block;
+                line-height: 14px;
+                height: 40px;
+
+                &:hover {
+                    background-color: $bg-color1-hover;
+                    border-left: 4px solid $bg-color-border-hover;
+                }
+
+                .iconMenu {
+                    width: 12px;
+                    padding-left: 18px;
+                    padding-right: 12px;
+
+                }
+
+                a {
+                    color: $aside-font-color;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 42px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $aside-font-color-hover;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}

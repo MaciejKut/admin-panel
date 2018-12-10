@@ -2,8 +2,8 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import 'sections/_aside.scss';
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 32px;
+body {
+    font-family: $default-font;
 }
