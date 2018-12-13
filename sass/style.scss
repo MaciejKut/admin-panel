@@ -3,6 +3,7 @@
 @import "normalize";
 @import "layout";
 @import 'sections/_aside.scss';
+@import 'sections/_contentWrapper.scss';
 
 body {
     font-family: $default-font;

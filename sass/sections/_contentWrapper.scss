@@ -1,0 +1,13 @@
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+
+    .infoBar {
+        background-color: rgb(139, 60, 113);
+        order: 3;
+    }
+
+    .contentWrapper {
+        order: 1;
+    }
+}

@@ -10,17 +10,15 @@
             justify-content: space-between;
             padding-bottom: 20px;
 
-
             .hamburger {
                 padding-top: 3px;
 
                 &:hover {
                     transform: scale(1.1);
+                    filter: brightness(2.25);
                 }
-
             }
         }
-
     }
 
     .navigation {
@@ -35,14 +33,21 @@
 
                 &:hover {
                     background-color: $bg-color1-hover;
-                    border-left: 4px solid $bg-color-border-hover;
+                    border-left: 7px solid $bg-color-border-hover;
+
+                    .iconMenu {
+                        filter: brightness(2.25);
+                    }
                 }
 
                 .iconMenu {
                     width: 12px;
                     padding-left: 18px;
-                    padding-right: 12px;
+                    padding-right: 12px; // background: $aside-font-color url(/images/icons/icon-banners.png);
 
+                    &:hover {
+                        filter: brightness(2.25);
+                    }
                 }
 
                 a {
@@ -58,10 +63,6 @@
                     }
                 }
             }
-
         }
     }
-
-
-
 }
