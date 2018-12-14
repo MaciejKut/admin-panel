@@ -1,13 +1,16 @@
-.contentWrapper {
+.mainContainer {
     display: flex;
     flex-direction: column;
+    background-color: $bg-color2;
+
 
     .infoBar {
         background-color: rgb(139, 60, 113);
-        order: 3;
+        order: 0;
     }
 
     .contentWrapper {
         order: 1;
+        padding: 18px;
     }
 }
