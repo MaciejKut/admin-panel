@@ -4,7 +4,9 @@
 @import "layout";
 @import 'sections/_aside.scss';
 @import 'sections/_contentWrapper.scss';
-@import 'components/mark.scss';
+@import 'components/_mark.scss';
+@import 'components/infobar';
+@import 'sections/_sectionBasic.scss';
 
 body {
     font-family: $default-font;

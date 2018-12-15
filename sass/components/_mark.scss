@@ -1,0 +1,18 @@
+@mixin mark {
+    border-radius: 20px;
+    border: none;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(233, 221, 60);
+    position: absolute;
+    top: 0;
+    right: -2px;
+
+
+}
+
+.marker {
+    @include mark;
+    background-color: $bg-color-border-hover;
+
+}

@@ -1,0 +1,55 @@
+.infoBar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        border-left: 1px solid $border-color1;
+        padding: 16px 20px;
+
+        span.icon {
+            align-content: center;
+
+            a {
+                padding-left: 20px;
+                text-decoration: none;
+                vertical-align: middle;
+                line-height: 1;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+
+        &:nth-child(1)>span>a {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+            font-weight: 400;
+            color: $font-color2;
+        }
+
+        &:nth-child(2)>span {
+            position: relative;
+
+        }
+
+        &:nth-child(3)>span>a {
+            font-size: 13px;
+            font-weight: 300;
+            color: $font-color1;
+
+        }
+
+        &:nth-child(4)>span>a {
+            padding-right: 0;
+            padding-left: 0;
+
+        }
+    }
+}
