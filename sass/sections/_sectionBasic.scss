@@ -2,6 +2,7 @@
     background: $bg-color6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 18px;
+
 }
 
 .sectionMain {
@@ -19,5 +20,10 @@
             padding: 20px 0 20px 17px;
         }
 
+    }
+
+    .contentSection {
+        padding: 20px;
+        text-align: center;
     }
 }
