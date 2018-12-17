@@ -1,4 +1,32 @@
 .contentStatistic {
     @include centerContent;
+    margin-top: 85px;
+    text-align: left;
 
+    img {
+        margin-top: 40px;
+    }
+}
+
+.generalStatisticKPI {
+    border-bottom: 1px solid $border-color2;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+    padding-bottom: 7px;
+
+
+    .KpiNumber {
+        font-size: 16px;
+        font-weight: 300;
+        color: $font-color3;
+    }
+
+}
+
+.KpiText {
+    font-size: 16px;
+    font-weight: 700;
+    color: $df-font-color;
 }
