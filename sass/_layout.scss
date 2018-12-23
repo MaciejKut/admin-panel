@@ -36,8 +36,7 @@ img.displayFlex {
 
 .container-fluid {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .row {
@@ -51,6 +50,16 @@ img.displayFlex {
             $width: 100% / 12 * $i;
             flex: 0 0 $width;
             max-width: $width;
+        }
+    }
+}
+
+@mixin grid2($prefix) {
+    @for $i from 1 through 12 {
+        .col-#{$prefix}-#{$i} {
+            $width: 100% / 12 * $i;
+            flex: 0 0 $width;
+            margin-left: $width;
         }
     }
 }
@@ -69,4 +78,20 @@ img.displayFlex {
 
 @media(min-width: 1200px) {
     @include grid('xl');
+}
+
+@media(max-width: 767px) {
+    @include grid2('sm-offset');
+}
+
+@media(min-width: 768px) {
+    @include grid2('md-offset');
+}
+
+@media(min-width: 992px) {
+    @include grid2('lg-offset');
+}
+
+@media(min-width: 1200px) {
+    @include grid2('xl-offset');
 }
