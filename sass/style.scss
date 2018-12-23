@@ -1,20 +1,4 @@
+@import "normalize";
 @import "variables";
 @import "mixins";
-@import "normalize";
 @import "layout";
-@import 'sections/_aside.scss';
-@import 'sections/_contentWrapper.scss';
-@import 'components/_mark.scss';
-@import 'components/infobar';
-@import 'sections/_sectionBasic.scss';
-@import 'components/_tables.scss';
-@import 'components/_generalStatistic.scss';
-
-body {
-    font-family: $default-font;
-}
-
-img.displayFlex {
-    width: 100%;
-    height: auto;
-}

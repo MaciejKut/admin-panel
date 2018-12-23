@@ -1,0 +1,44 @@
+@mixin button-bg($bg) {
+    background: $bg;
+
+    &:active {
+        background: darken($bg, 25%);
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    color: $btn-font-color1;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    font-family: $default-font;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.btn-default {
+    @include button-bg($btn-bg1);
+
+    &:hover {
+        background: $btn-bg1h;
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-deny {
+    @include button-bg($btn-bg2);
+
+    &:hover {
+        background: $btn-bg2h;
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-inactive {
+    @include button-bg($btn-bg3);
+}

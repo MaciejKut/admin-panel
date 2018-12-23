@@ -1,0 +1,58 @@
+.timeRange {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $border-color2;
+    padding: 35px;
+
+    .timeRangeBorder {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 3px;
+        border: 1px solid $btn-bg3;
+        height: 40px;
+
+
+        input {
+            border: none;
+            padding: 10px;
+            position: relative;
+
+            &:nth-child(1):after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 10%;
+                width: 1px;
+                height: 80%;
+                /* or 100px */
+                background: $btn-bg3;
+            }
+        }
+
+
+    }
+
+    .refresh {
+        text-align: center;
+        background-color: $btn-bg1;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        margin-left: 12px;
+        border-radius: 3px;
+
+        img {
+            width: 12px;
+            height: auto;
+        }
+
+        &:hover {
+            background-color: $btn-bg1h;
+        }
+
+    }
+
+}
