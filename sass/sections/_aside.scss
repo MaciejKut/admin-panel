@@ -64,5 +64,45 @@
                 }
             }
         }
+
+
+    }
+
+    .chat {
+        border-top: 1px solid $border-color1;
+        text-align: center;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0 auto;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .avatar {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto;
+
+            .avatarImg {
+                position: relative;
+
+                img {
+                    height: 43px;
+                    width: auto;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+
     }
 }
