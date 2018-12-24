@@ -12,6 +12,7 @@
         border-radius: 3px;
         border: 1px solid $btn-bg3;
         height: 40px;
+        flex-wrap: wrap;
 
 
         input {
@@ -70,4 +71,48 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
     background: url(../../images/icons/icon-calendar.png) center/80% no-repeat;
     opacity: 0.8
+}
+
+@media(max-width: 768px) {
+    .timeRange {
+        border: none;
+        display: flex;
+        flex-direction: column;
+
+        .timeRangeBorder {
+            height: auto;
+            margin: 20px 0;
+            border: none;
+
+            input {
+                border: 1px solid $border-color2;
+                padding: 10px;
+                position: relative;
+
+
+            }
+
+            .refresh {
+                text-align: center;
+                background-color: $btn-bg1;
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                margin-left: 12px;
+                border-radius: 3px;
+
+                img {
+                    width: 12px;
+                    height: auto;
+                }
+
+                &:hover {
+                    background-color: $btn-bg1h;
+                }
+
+            }
+
+        }
+    }
 }

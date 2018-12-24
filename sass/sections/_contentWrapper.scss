@@ -21,11 +21,8 @@
 
 @media (max-width: 768px) {
     .mainContainer {
-        display: flex;
-        flex-direction: column;
-        background-color: $bg-color2;
-        width: 100%;
-
+        width: 100vw;
+        margin-right: 0;
 
         .infoBar {
             background-color: $bg-color6;

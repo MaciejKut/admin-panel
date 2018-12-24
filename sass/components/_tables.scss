@@ -51,8 +51,6 @@
     text-align: center;
     overflow-x: auto;
 
-
-
     .table2 {
         border-collapse: collapse;
         border-top: 1px solid $border-color1;
@@ -85,7 +83,6 @@
                     }
                 }
             }
-
         }
 
         tr,
@@ -107,10 +104,7 @@
 
             &:hover {
                 background-color: $bg-color7;
-
             }
-
-
         }
     }
 }
