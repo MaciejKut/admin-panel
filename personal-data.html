@@ -74,19 +74,107 @@
                             <div class="sectionTitle">
                                 <p>Personal Data</p>
                             </div>
-                            <div class="contentSection">
-                                <div class="personalSection">
-                                    <form>
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="name" placeholder="Leonardo">
-                                    </form>
-                                </div>
-                                <div class="personalSection"></div>
-                                <div class="personalSection"></div>
 
-                                <div class="btn btn-default">Save</div>
-
+                            <div class="personalSection">
+                                <form id="personalDataForm">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="name">Name</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="text" name="fname" id="name" placeholder="Leonardo">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="surname">Surname</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="text" name="lname" id="surname" placeholder="DiCaprio">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="email">E-mail</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="email" name="email" id="email" placeholder="your@email.com"
+                                                pattern=".+@+." size="30" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="pnumber">Phone number</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="number" name="pnumber" id="pnumber" placeholder="+1256455654"
+                                                required>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
+                            <div class="personalSection">
+                                <form id="personalDataForm">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="skype">Skype</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="text" name="skype" id="skype" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="icq">ICQ</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="text" name="icq" id="icq" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="msn">Msn</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="text" name="msn" id="msn" placeholder="">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="personalSection">
+                                <form id="personalDataForm">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="wallet">Wallet</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="text" name="wallet" id="wallet" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="pass">Password</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="password" name="pass" id="pass" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="rpass">Repeat</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <input type="password" name="rpass" id="rpass" required>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="personalSection">
+                                <form id="personalDataForm">
+                                    <div class="btn btn-default" role="input" type="submit" value="Submit">Save</div>
+                                </form>
+                            </div>
+
                         </div>
 
 

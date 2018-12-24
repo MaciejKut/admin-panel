@@ -18,3 +18,25 @@
 
     }
 }
+
+@media (max-width: 768px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-color2;
+        width: 100%;
+
+
+        .infoBar {
+            background-color: $bg-color6;
+            order: 0;
+
+        }
+
+        .contentWrapper {
+            order: 1;
+            padding: 18px;
+
+        }
+    }
+}
