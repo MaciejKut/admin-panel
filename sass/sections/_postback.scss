@@ -1,0 +1,85 @@
+.postbackSection {
+    padding: 20px;
+
+    p {
+        margin-left: 20px;
+    }
+
+    .textareaWrapper {
+        margin: 20px;
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .postbackBorder {
+        border-top: 1px solid $border-color1;
+        border-bottom: 1px solid $border-color1;
+
+        &:nth-of-type(1) {
+            border-right: 1px solid $border-color1;
+        }
+    }
+
+    .checkboxWrapper {
+        height: 150px;
+        overflow-x: auto;
+
+        input {
+            width: auto;
+        }
+
+        .df {
+            margin-top: 20px;
+        }
+
+    }
+
+    .redText {
+        text-transform: uppercase;
+        color: $font-color5;
+    }
+
+    .rangeWrapper {
+        position: relative;
+
+    }
+
+    .beginingScale {
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+
+    .endingScale {
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+
+    .sliderDesc {
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+
+
+
+}
+
+.submitPostback {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+}

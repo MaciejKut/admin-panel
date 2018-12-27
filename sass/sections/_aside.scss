@@ -4,7 +4,7 @@
     height: 100%;
     position: fixed;
     width: calc((100vw / 12)*2);
-    overflow: auto;
+    overflow-y: auto;
 
     .leftNavHeader {
         padding: 20px 20px 20px;

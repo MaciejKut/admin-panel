@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post back</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="col-md-2 leftNav">
+            <div class="leftNavHeader">
+
+                <div class="logo">
+                    <div><img src="images/logo.png" alt /></div>
+                    <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li class="menuItem"><a href="index.html"><span class="iconMenu"><img src="images/icons/icon-general.png"
+                                    alt /></span>General</a></li>
+                    <li class="menuItem"><span class="iconMenu"><img src="images/icons/icon-details.png" /></span><a
+                            href="details.html">Details</a></li>
+                    <li class="menuItem"><a href="links.html"><span class="iconMenu"><img src="images/icons/icon-links.png" /></span>Links</a></li>
+                    <li class="menuItem"><a href="banners.html"><span class="iconMenu"><img src="images/icons/icon-banners.png" /></span>Banners</a></li>
+                    <li class="menuItem"><a href="personal-data.html"><span class="iconMenu"><img src="images/icons/icon-personal.png" /></span>Personal
+                            Data</a></li>
+                    <li class="menuItem"><a href="payout.html"><span class="iconMenu"><img src="images/icons/icon-payout.png" /></span>Payout</a></li>
+                    <li class="menuItem"><a href="postback.html"><span class="iconMenu"><img src="images/icons/icon-postbox.png" /></span>Postback</a></li>
+
+                </ul>
+            </div>
+            <div class="chat">
+                <h3>Your Manager</h3>
+                <div class="avatar">
+                    <div class="avatarImg">
+                        <div id="notificationMarker" class="active "></div>
+                        <img src="images/icons/michal.png" alt="">
+                    </div>
+                    <p>Mikhael E.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="">
+
+
+            <div class="col-md-offset-2 col-md-10">
+                <div class="mainContainer">
+                    <div class="infoBar">
+                        <ul>
+                            <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
+                                        src="images/icons/infobar/arrow-down.png" alt=""></span></li>
+                            <li><span class="icon">
+                                    <div id="notificationMarker" class="marker "></div><img src="images/icons/infobar/notifications.png"
+                                        alt="">
+                                </span></li>
+                            <li><span class="icon" id="notification"><img src="images/icons/infobar/profile.png" alt=""><a
+                                        href="">Maciej Kutzmann</a></span></li>
+                            <li><span class="icon"><a href=""></a><img src="images/icons/infobar/exit.png" alt=""></a></span></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="contentWrapper">
+                        <div class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>New Post Back</p>
+                            </div>
+
+                            <div class="postbackSection">
+                                <form id="postbackDataForm">
+
+                                    <p>You can insert new postback info here.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 ">
+                                            <div class="textareaWrapper">
+                                                <label for="name">Signup</label>
+                                                <textarea type="textarea" name="signupName" id="signupName"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12 ">
+                                            <div class="textareaWrapper">
+                                                <label for="name">Signup</label>
+                                                <textarea type="textarea" name="signupName" id="signupName"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="postbackSection">
+                                <form id="postbackDataForm">
+                                    <div class="row">
+
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="textareaWrapper">
+                                                <label for="sendingOption">Sending options:</label>
+                                                <select id="sendingOption" name="Sending Option">
+                                                    <option value="australia">Australia</option>
+                                                    <option value="canada">Canada</option>
+                                                    <option value="usa">USA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="textareaWrapper">
+                                                <label for="postbackType">Postback type</label>
+                                                <select id="postbackType" name="Postback Type">
+                                                    <option value="australia">xxx</option>
+                                                    <option value="canada">bbb</option>
+                                                    <option value="usa">ccc</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="textareaWrapper">
+                                                <label for="country">To countries</label>
+                                                <select id="country" name="country">
+                                                    <option value="australia">Australia</option>
+                                                    <option value="canada">Canada</option>
+                                                    <option value="usa">USA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <div class="postbackSection">
+                                <form id="postbackDataForm">
+
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 postbackBorder">
+                                            <p><span class="redText">Not</span> send statuses</p>
+                                            <div class="textareaWrapper checkboxWrapper">
+                                                <form id="postbackDataForm">
+                                                    <div class="df">
+                                                        <label for="name">
+                                                            <input type="checkbox" name="" id="checkNumber">
+                                                            checkNumber
+
+                                                        </label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="noAnswer">
+                                                        <label for="name">noAnswer</label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="noCall">
+                                                        <label for="name">noCall</label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="callAgain">
+                                                        <label for="name">callAgain</label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="checkNumber">
+                                                        <label for="name">checkNumber</label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="noAnswer">
+                                                        <label for="name">noAnswer</label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="noCall">
+                                                        <label for="name">noCall</label>
+                                                    </div>
+                                                    <div class="df">
+                                                        <input type="checkbox" name="" id="callAgain">
+                                                        <label for="name">callAgain</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12 postbackBorder">
+                                            <p class="sliderDesc">Send after</p>
+                                            <div class="textareaWrapper">
+                                                <div class="rangeWrapper">
+                                                    <input type="range" name="points" min="0" max="168">
+                                                    <span class="beginingScale">0</span>
+                                                    <span class="endingScale">168</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+                            <div class="submitPostback">
+                                <form id="personalDataForm">
+                                    <div class="btn btn-default" role="input" type="submit" value="Submit">Create Pixel</div>
+                                </form>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -9,9 +9,12 @@
 @import 'sections/_sectionBasic.scss';
 @import 'sections/_timeRange.scss';
 @import 'sections/personal';
+@import 'sections/postback';
 
 body {
     font-family: $default-font;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 img.displayFlex {
