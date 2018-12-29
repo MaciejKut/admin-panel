@@ -1,39 +1,58 @@
 .mainContainer {
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: $bg-color2;
-    margin-right: calc((100vw / 12)*2);
     width: calc((100vw / 12)*10);
+    margin-left: calc((100vw / 12)*2);
+
 
 
     .infoBar {
         background-color: $bg-color6;
         order: 0;
+        position: fixed;
+        top: 0;
+        width: calc((100vw / 12)*10);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
 
     }
 
     .contentWrapper {
+        margin-top: 52px;
         order: 1;
         padding: 18px;
+        width: 100%;
 
     }
 }
 
 @media (max-width: 768px) {
     .mainContainer {
-        width: 100vw;
+        width: 100%;
         margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 52px;
 
 
         .infoBar {
-            background-color: $bg-color6;
-            order: 0;
+            position: fixed;
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            margin-top: 52px;
+            height: 52px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
 
         }
 
         .contentWrapper {
-            order: 1;
+            order: 0;
             padding: 18px;
+            margin: 0;
+            width: 100%;
 
         }
     }

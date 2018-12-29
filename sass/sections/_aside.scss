@@ -6,6 +6,9 @@
     width: calc((100vw / 12)*2);
     overflow-y: auto;
 
+
+
+
     .leftNavHeader {
         padding: 20px 20px 20px;
 
@@ -116,5 +119,12 @@
 @media (max-width: 768px) {
     .leftNav {
         display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow-y: auto;
+        margin-bottom: 52px;
+        z-index: 1;
     }
 }
