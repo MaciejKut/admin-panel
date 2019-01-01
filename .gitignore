@@ -81,3 +81,4 @@ typings/
 #Stylesheet folder
 css
 .history
+!docs/css
