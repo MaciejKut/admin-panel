@@ -13,7 +13,7 @@
 <body>
 
     <div class="container-fluid">
-        <div class="leftNav">
+        <div id="navigation" class="leftNav">
             <div class="leftNavHeader">
 
                 <div class="logo">
@@ -55,6 +55,10 @@
                 <div class="mainContainer">
                     <div class="infoBar">
                         <ul>
+                            <li id="menu" class="menu">
+                                <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+
+                            </li>
                             <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
                                         src="images/icons/infobar/arrow-down.png" alt=""></span></li>
                             <li><span class="icon">
@@ -75,8 +79,8 @@
                                 <p>Personal Data</p>
                             </div>
 
-                            <div class="personalSection">
-                                <form id="personalDataForm">
+                            <form id="personalDataForm" action="#" method="GET">
+                                <div class="personalSection">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
                                             <label for="name">Name</label>
@@ -99,7 +103,7 @@
                                         </div>
                                         <div class="col-md-8 col-sm-12">
                                             <input type="email" name="email" id="email" placeholder="your@email.com"
-                                                pattern=".+@+." size="30" required>
+                                                size="30" required>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -111,10 +115,8 @@
                                                 required>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="personalSection">
-                                <form id="personalDataForm">
+                                </div>
+                                <div class="personalSection">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
                                             <label for="skype">Skype</label>
@@ -139,10 +141,9 @@
                                             <input type="text" name="msn" id="msn" placeholder="">
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="personalSection">
-                                <form id="personalDataForm">
+
+                                </div>
+                                <div class="personalSection">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12">
                                             <label for="wallet">Wallet</label>
@@ -167,13 +168,11 @@
                                             <input type="password" name="rpass" id="rpass" required>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="personalSection">
-                                <form id="personalDataForm">
-                                    <div class="btn btn-default" role="input" type="submit" value="Submit">Save</div>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="personalSection personalSectionSubmit">
+                                    <input class="btn btn-default" role="input" type="submit" value="Save" form="personalDataForm">
+                                </div>
+                            </form>
 
                         </div>
 

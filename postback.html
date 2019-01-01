@@ -14,7 +14,7 @@
 <body>
 
     <div class="container-fluid">
-        <div class="leftNav">
+        <div id="navigation" class="leftNav">
             <div class="leftNavHeader">
 
                 <div class="logo">
@@ -56,6 +56,10 @@
                 <div class="mainContainer">
                     <div class="infoBar">
                         <ul>
+                            <li id="menu" class="menu">
+                                <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+
+                            </li>
                             <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
                                         src="images/icons/infobar/arrow-down.png" alt=""></span></li>
                             <li><span class="icon">
@@ -76,8 +80,8 @@
                                 <p>New Post Back</p>
                             </div>
 
-                            <div class="postbackSection">
-                                <form id="postbackDataForm">
+                            <form action="GET" method="GET" id="postbackDataForm">
+                                <div class="postbackSection">
 
                                     <p>You can insert new postback info here.</p>
                                     <div class="row">
@@ -96,10 +100,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="postbackSection">
-                                <form id="postbackDataForm">
+
+                                </div>
+                                <div class="postbackSection">
+
                                     <div class="row">
 
                                         <div class="col-md-4 col-sm-12">
@@ -134,54 +138,54 @@
                                         </div>
                                     </div>
 
-                                </form>
-                            </div>
 
-                            <div class="postbackSection">
-                                <form id="postbackDataForm">
+                                </div>
+
+                                <div class="postbackSection">
+
 
 
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12 postbackBorder">
                                             <p><span class="redText">Not</span> send statuses</p>
                                             <div class="textareaWrapper checkboxWrapper">
-                                                <form id="postbackDataForm">
-                                                    <div class="df">
-                                                        <label for="name">
-                                                            <input type="checkbox" name="" id="checkNumber">
-                                                            checkNumber
 
-                                                        </label>
-                                                    </div>
-                                                    <div class="df">
-                                                        <input type="checkbox" name="" id="noAnswer">
-                                                        <label for="name">noAnswer</label>
-                                                    </div>
-                                                    <div class="df">
-                                                        <input type="checkbox" name="" id="noCall">
-                                                        <label for="name">noCall</label>
-                                                    </div>
-                                                    <div class="df">
-                                                        <input type="checkbox" name="" id="callAgain">
-                                                        <label for="name">callAgain</label>
-                                                    </div>
-                                                    <div class="df">
+                                                <div class="df">
+                                                    <label for="name">
                                                         <input type="checkbox" name="" id="checkNumber">
-                                                        <label for="name">checkNumber</label>
-                                                    </div>
-                                                    <div class="df">
-                                                        <input type="checkbox" name="" id="noAnswer">
-                                                        <label for="name">noAnswer</label>
-                                                    </div>
-                                                    <div class="df">
-                                                        <input type="checkbox" name="" id="noCall">
-                                                        <label for="name">noCall</label>
-                                                    </div>
-                                                    <div class="df">
-                                                        <input type="checkbox" name="" id="callAgain">
-                                                        <label for="name">callAgain</label>
-                                                    </div>
-                                                </form>
+                                                        checkNumber
+
+                                                    </label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="noAnswer">
+                                                    <label for="name">noAnswer</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="noCall">
+                                                    <label for="name">noCall</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="callAgain">
+                                                    <label for="name">callAgain</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="checkNumber">
+                                                    <label for="name">checkNumber</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="noAnswer">
+                                                    <label for="name">noAnswer</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="noCall">
+                                                    <label for="name">noCall</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="" id="callAgain">
+                                                    <label for="name">callAgain</label>
+                                                </div>
+
                                             </div>
                                         </div>
 
@@ -196,16 +200,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
+
+                                </div>
 
 
 
-                            <div class="submitPostback">
-                                <form id="personalDataForm">
-                                    <div class="btn btn-default" role="input" type="submit" value="Submit">Create Pixel</div>
-                                </form>
-                            </div>
+                                <div class="submitPostback">
+
+                                    <input class="btn btn-default" role="input" type="submit" value="Create Pixel">
+                                </div>
+                            </form>
 
                         </div>
 

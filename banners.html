@@ -11,9 +11,20 @@
 </head>
 
 <body>
+    <div class="overlay2" id="overlay">
+        <div class="modal" id="myModal">
+            <div class="btn-close js--close-modal">
+                x
+            </div>
+            <h4>Witaj w modalu</h4>
+            <p>No działa całkiem nieźle</p>
+            <button class="btn btn-default js--close-modal">Okay</button>
+        </div>
+
+    </div>
 
     <div class="container-fluid">
-        <div class="leftNav">
+        <div id="navigation" class="leftNav">
             <div class="leftNavHeader">
 
                 <div class="logo">
@@ -55,6 +66,10 @@
                 <div class="mainContainer">
                     <div class="infoBar">
                         <ul>
+                            <li id="menu" class="menu">
+                                <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+
+                            </li>
                             <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
                                         src="images/icons/infobar/arrow-down.png" alt=""></span></li>
                             <li><span class="icon">
@@ -75,7 +90,7 @@
                                 <p>Banners</p>
                             </div>
                             <div class="contentSection">
-                                <div class="btn btn-default">+ Add New</div>
+                                <div class="btn btn-default btnAddNewBanner">+ Add New</div>
                                 <table class="table1">
                                     <tr>
                                         <td>wartośći </td>
@@ -132,7 +147,7 @@
                                         <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
                                     </tr>
                                 </table>
-                                <div class="btn btn-default">+ Add New</div>
+                                <div class="btn btn-default btnAddNewBanner">+ Add New</div>
 
                             </div>
                         </div>

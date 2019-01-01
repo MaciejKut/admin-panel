@@ -1,39 +1,42 @@
-.personalSection {
+form#personalDataForm {
+    text-align: left;
+    display: block;
 
-    border-bottom: 1px solid $border-color1;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 20px;
-
-    form {
+    .personalSection {
+        width: 80%;
+        border-bottom: 1px solid $border-color1;
+        margin: 0 auto;
         text-align: left;
+        padding: 20px 20px;
+    }
+
+    label {
+        padding: 20px 12px 12px 0;
         display: inline-block;
+        text-align: left;
+    }
 
+    input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $border-color3;
+        padding: 12px 20px;
+        margin: 8px 0;
+        resize: vertical;
 
-
-        label {
-            padding: 20px 12px 12px 0;
-            display: inline-block;
-            text-align: left;
+        &:focus,
+        &:hover,
+        &:active {
+            color: $font-color3;
+            border: 1px solid $border-color4;
+            outline: none;
+            color: $font-color4;
         }
 
-        input {
-            width: 100%;
-            border-radius: 5px;
-            border: 1px solid $border-color3;
-            padding: 12px 20px;
-            margin: 8px 0;
-            resize: vertical;
+    }
 
-            &:focus,
-            &:hover,
-            &:active {
-                color: $font-color3;
-                border: 1px solid $border-color4;
-                outline: none;
-                color: $font-color4;
-            }
-
-        }
+    .personalSectionSubmit {
+        display: flex;
+        justify-content: flex-end;
     }
 }
