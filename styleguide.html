@@ -7,14 +7,14 @@
     <title>Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
-
-        <div class="leftNav">
+    <div class="container-fluid">
+        <div id="navigation" class="leftNav">
             <div class="leftNavHeader">
 
                 <div class="logo">
@@ -24,225 +24,257 @@
             </div>
             <div class="navigation">
                 <ul>
-                    <li class="menuItem"><a href="#"><span class="iconMenu"><img src="images/icons/icon-general.png"
+                    <li class="menuItem"><a href="index.html"><span class="iconMenu"><img src="images/icons/icon-general.png"
                                     alt /></span>General</a></li>
-                    <li class="menuItem"><span class="iconMenu"><img src="images/icons/icon-details.png" /></span><a
-                            href="#">Details</a></li>
-                    <li class="menuItem"><a href="#"><span class="iconMenu"><img src="images/icons/icon-links.png" /></span>Links</a></li>
-                    <li class="menuItem"><a href="#"><span class="iconMenu"><img src="images/icons/icon-banners.png" /></span>Banners</a></li>
-                    <li class="menuItem"><a href="#"><span class="iconMenu"><img src="images/icons/icon-personal.png" /></span>Personal
+                    <li class="menuItem"><span class="iconMenu"><img src="images/icons/icon-details.png" alt /></span><a
+                            href="details.html">Details</a></li>
+                    <li class="menuItem"><a href="links.html"><span class="iconMenu"><img src="images/icons/icon-links.png"
+                                    alt /></span>Links</a></li>
+                    <li class="menuItem"><a href="banners.html"><span class="iconMenu"><img src="images/icons/icon-banners.png"
+                                    alt /></span>Banners</a></li>
+                    <li class="menuItem"><a href=""><span class="iconMenu"><img src="images/icons/icon-personal.png"
+                                    alt /></span>Personal
                             Data</a></li>
-                    <li class="menuItem"><a href="#"><span class="iconMenu"><img src="images/icons/icon-payout.png" /></span>Payout</a></li>
-                    <li class="menuItem"><a href="#"><span class="iconMenu"><img src="images/icons/icon-postbox.png" /></span>Postback</a></li>
+                    <li class="menuItem"><a href="payout.html"><span class="iconMenu"><img src="images/icons/icon-payout.png"
+                                    alt /></span>Payout</a></li>
+                    <li class="menuItem"><a href="postback.html"><span class="iconMenu"><img src="images/icons/icon-postbox.png"
+                                    alt /></span>Postback</a></li>
 
                 </ul>
             </div>
-
-        </div>
-        <div class="infoBar">
-            <ul>
-                <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
-                            src="images/icons/infobar/arrow-down.png" alt=""></span></li>
-                <li><span class="icon">
-                        <div id="notificationMarker" class="marker "></div><img src="images/icons/infobar/notifications.png"
-                            alt="">
-                    </span></li>
-                <li><span class="icon" id="notification"><img src="images/icons/infobar/profile.png" alt=""><a href="">Maciej
-                            Kutzmann</a></span></li>
-                <li><span class="icon"><a href=""></a><img src="images/icons/infobar/exit.png" alt=""></a></span></li>
-
-            </ul>
-        </div>
-
-        <div class="mainContainer">
-
-
-
-            <div class="contentWrapper">
-                <div class="sectionMain">
-                    <div class="sectionTitle">
-                        <p>Paragraphs & links</p>
+            <div class="chat">
+                <h3>Your Manager</h3>
+                <div class="avatar">
+                    <div class="avatarImg">
+                        <div class="active "></div>
+                        <img src="images/icons/michal.png" alt="">
                     </div>
-                    <div class="contentSection">
-                        <table class="table1">
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <td>wartośći </td>
-                                <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
-                                <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
-                                <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
-                            </tr>
-                        </table>
-
-                    </div>
+                    <p>Mikhael E.</p>
                 </div>
-                </section>
-                <div class="sectionMain">
-                    <div class="sectionTitle">
-                        <p>Graph</p>
-                    </div>
-                    <div class="contentSection">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="generalStatisticKPI">
-                                    <span class="KpiText">Visit Signups</span>
-                                    <span class="KpiNumber">568</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="generalStatisticKPI">
-                                    <span class="KpiText">Net Deposit</span>
-                                    <span class="KpiNumber">568</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="generalStatisticKPI">
-                                    <span class="KpiText">FTD</span>
-                                    <span class="KpiNumber">568</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="generalStatisticKPI">
-                                    <span class="KpiText">Turn Over</span>
-                                    <span class="KpiNumber">568</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="contentStatistic">
-                            <span class="KpiText">Earnings chart</span>
-                            <div>
-                                <img src="images/graph.png" class="displayFlex" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </section>
-                <div class="sectionMain">
-                    <div class="sectionTitle">
-                        <p>Headers</p>
-                    </div>
-                    <div class="contentSection">
-
-                        <h1> h1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                        <h2>h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                        <h3>h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <h4>h4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                        <h5>h5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                        <h6>h6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-
-                        <div class="btn btn-default">+ default</div>
-                        <div class="btn btn-deny">primary</div>
-                        <div class="btn btn-inactive">primary</div>
-                        <div class="btn btn-default"><img class="nonVisible" src="images/icons/table/link.png" alt="">btn-link</div>
-
-                    </div>
-                </div>
-
-
-                <section class="sectionMain">
-                    <div class="sectionTitle">
-                        <p>Paragraphs & links</p>
-                    </div>
-                    <div class="contentSection">
-
-                        <p>Paragraph Lorem ipsum dolor sit amet, consectetur <strong>
-                                Strongadipiscing
-                                elit</strong>.
-
-
-                            urna, eu <a href="#">Inline link</a>
-                            ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo
-                            scelerisque
-                            ligula a dapibus. Proin vitae arcu nulla.</p>
-                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                    </div>
-                </section>
-
-                <section class="sectionMain">
-                    <div class="sectionTitle">
-                        <p>Lists</p>
-                    </div>
-                    <div class="contentSection">
-
-                        <p>Unordered list: </p>
-                        <ul>
-                            <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing
-                                    elit.</a>.</li>
-                            <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                            <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur
-                                    adipiscing
-                                    elit.</a>.</li>
-                        </ul>
-                        <p>Ordered list</p>
-                        <ol>
-                            <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing
-                                    elit.</a>.</li>
-                            <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-                            <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur
-                                    adipiscing
-                                    elit.</a>.</li>
-                        </ol>
-                    </div>
-                </section>
             </div>
+
         </div>
+        <div class="">
 
 
+            <div class="col-md-10">
+                <div class="mainContainer">
+                    <div class="infoBar">
+
+                        <ul>
+                            <li id="menu" class="menu">
+                                <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+
+                            </li>
+                            <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
+                                        src="images/icons/infobar/arrow-down.png" alt=""></span></li>
+                            <li><span class="icon">
+                                    <span id="notificationMarker" class="marker "></span><img src="images/icons/infobar/notifications.png"
+                                        alt="">
+                                </span></li>
+                            <li><span class="icon" id="notification"><img src="images/icons/infobar/profile.png" alt=""><a
+                                        href="">Maciej Kutzmann</a></span></li>
+                            <li><span class="icon"><a href=""><img src="images/icons/infobar/exit.png" alt=""></a></span></li>
+
+                        </ul>
+                    </div>
 
 
+                    <div class="contentWrapper">
+                        <div class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>Paragraphs & links</p>
+                            </div>
+                            <div class="contentSection">
+                                <div class="btn btn-default">+ Add Link</div>
+                                <table class="table1">
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>wartośći </td>
+                                        <td><a class="table1Link" href="#">https://www.kutzmann.pl</a></td>
+                                        <td><img class="nonVisible" src="images/icons/table/link.png" alt=""></td>
+                                        <td><img class="nonVisible" src="images/icons/table/delete.png" alt=""></td>
+                                    </tr>
+                                </table>
+                                <div class="btn btn-default">+ Add Link</div>
+
+                            </div>
+                        </div>
+
+                        <div class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>Graph</p>
+                            </div>
+                            <div class="timeRange">
+                                <div class="timeRangeBorder">
+                                    <input type="date" value="2016-05-16" />
+                                    <input type="date" value="2016-05-16" />
+                                </div>
+                                <div class="refresh"><img src="/images/icons/refresh.png" alt /></div>
+                            </div>
+                            <div class="contentSection">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="generalStatisticKPI">
+                                            <span class="KpiText">Visit Signups</span>
+                                            <span class="KpiNumber">568</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="generalStatisticKPI">
+                                            <span class="KpiText">Net Deposit</span>
+                                            <span class="KpiNumber">568</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="generalStatisticKPI">
+                                            <span class="KpiText">FTD</span>
+                                            <span class="KpiNumber">568</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="generalStatisticKPI">
+                                            <span class="KpiText">Turn Over</span>
+                                            <span class="KpiNumber">568</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="contentStatistic">
+
+                                    <img src="images/graph.png" class="displayFlex" alt="graph" />
+                                </div>
+
+                                <div class="contentStatistic">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>Headers</p>
+                            </div>
+                            <div class="contentSection">
+
+                                <h1> h1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                                <h2>h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                <h3>h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h4>h4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                <h5>h5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                <h6>h6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+
+                                <div class="btn btn-default">+ default</div>
+                                <div class="btn btn-deny">primary</div>
+                                <div class="btn btn-inactive">primary</div>
+                                <div class="btn btn-default"><img class="nonVisible" src="images/icons/table/link.png"
+                                        alt="">btn-link</div>
+                            </div>
+                        </div>
 
 
+                        <section class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>Paragraphs & links</p>
+                            </div>
+                            <div class="contentSection">
+
+                                <p>Paragraph Lorem ipsum dolor sit amet, consectetur <strong>
+                                        Strongadipiscing
+                                        elit</strong>.
+
+
+                                    urna, eu <a href="#">Inline link</a>
+                                    ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo
+                                    scelerisque
+                                    ligula a dapibus. Proin vitae arcu nulla.</p>
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                            </div>
+                        </section>
+
+                        <section class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>Lists</p>
+                            </div>
+                            <div class="contentSection">
+
+                                <p>Unordered list: </p>
+                                <ul>
+                                    <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing
+                                            elit.</a>.</li>
+                                    <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+                                    <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur
+                                            adipiscing
+                                            elit.</a>.</li>
+                                </ul>
+                                <p>Ordered list</p>
+                                <ol>
+                                    <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing
+                                            elit.</a>.</li>
+                                    <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+                                    <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur
+                                            adipiscing
+                                            elit.</a>.</li>
+                                </ol>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
+
+
 
 </body>
 
