@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post back</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="navigation" class="leftNav">
+            <div class="leftNavHeader">
+
+                <div class="logo">
+                    <div><img src="images/logo.png" alt /></div>
+                    <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li class="menuItem"><a href="index.html"><span class="iconMenu"><img src="images/icons/icon-general.png"
+                                    alt /></span>General</a></li>
+                    <li class="menuItem"><span class="iconMenu"><img src="images/icons/icon-details.png" alt /></span><a
+                            href="details.html">Details</a></li>
+                    <li class="menuItem"><a href="links.html"><span class="iconMenu"><img src="images/icons/icon-links.png"
+                                    alt /></span>Links</a></li>
+                    <li class="menuItem"><a href="banners.html"><span class="iconMenu"><img src="images/icons/icon-banners.png"
+                                    alt /></span>Banners</a></li>
+                    <li class="menuItem"><a href="personal-data.html"><span class="iconMenu"><img src="images/icons/icon-personal.png"
+                                    alt /></span>Personal
+                            Data</a></li>
+                    <li class="menuItem"><a href="payout.html"><span class="iconMenu"><img src="images/icons/icon-payout.png"
+                                    alt /></span>Payout</a></li>
+                    <li class="menuItem"><a href="postback.html"><span class="iconMenu"><img src="images/icons/icon-postbox.png"
+                                    alt /></span>Postback</a></li>
+                    <li class="menuItem"><a href="postback.html"><span class="iconMenu"><img src="images/icons/icon-postbox.png"
+                                    alt /></span>Postback</a></li>
+
+                </ul>
+            </div>
+            <div class="chat">
+                <h3>Your Manager</h3>
+                <div class="avatar">
+                    <div class="avatarImg">
+                        <div class="active "></div>
+                        <img src="images/icons/michal.png" alt="">
+                    </div>
+                    <p>Mikhael E.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="">
+
+
+            <div class="col-md-10">
+                <div class="mainContainer">
+                    <div class="infoBar">
+                        <ul>
+                            <li id="menu" class="menu">
+                                <div><img src="images/hamburger.png" class="hamburger" alt /></div>
+
+                            </li>
+                            <li><span class="icon"><img src="images/icons/infobar/wallet.png" alt=""><a href="" id="walletValue">$1,500.00</a><img
+                                        src="images/icons/infobar/arrow-down.png" alt=""></span></li>
+                            <li><span class="icon">
+                                    <span id="notificationMarker" class="marker "></span><img src="images/icons/infobar/notifications.png"
+                                        alt="">
+                                </span></li>
+                            <li><span class="icon" id="notification"><img src="images/icons/infobar/profile.png" alt=""><a
+                                        href="">Maciej Kutzmann</a></span></li>
+                            <li><span class="icon"><a href=""><img src="images/icons/infobar/exit.png" alt=""></a></span></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="contentWrapper">
+                        <div class="sectionMain">
+                            <div class="sectionTitle">
+                                <p>New Post Back</p>
+                            </div>
+
+                            <form action="GET" method="GET" id="postbackDataForm">
+                                <div class="postbackSection">
+
+                                    <p>You can insert new postback info here.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 ">
+                                            <div class="textareaWrapper">
+                                                <label for="signupName">Signup</label>
+                                                <textarea name="signupName" id="signupName"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12 ">
+                                            <div class="textareaWrapper">
+                                                <label for="signupName2">Signup</label>
+                                                <textarea name="signupName2" id="signupName2"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="postbackSection">
+
+                                    <div class="row">
+
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="textareaWrapper">
+                                                <label for="sendingOption">Sending options:</label>
+                                                <select id="sendingOption" name="Sending Option">
+                                                    <option value="australia">Australia</option>
+                                                    <option value="canada">Canada</option>
+                                                    <option value="usa">USA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="textareaWrapper">
+                                                <label for="postbackType">Postback type</label>
+                                                <select id="postbackType" name="Postback Type">
+                                                    <option value="australia">xxx</option>
+                                                    <option value="canada">bbb</option>
+                                                    <option value="usa">ccc</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="textareaWrapper">
+                                                <label for="country">To countries</label>
+                                                <select id="country" name="country">
+                                                    <option value="australia">Australia</option>
+                                                    <option value="canada">Canada</option>
+                                                    <option value="usa">USA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="postbackSection">
+
+
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 postbackBorder">
+                                            <p><span class="redText">Not</span> send statuses</p>
+                                            <div class="textareaWrapper checkboxWrapper">
+
+                                                <div class="df">
+                                                    <label for="checkNumber">
+                                                        <input type="checkbox" name="checkNumber" id="checkNumber">
+                                                        checkNumber
+
+                                                    </label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="noAnswer" id="noAnswer">
+                                                    <label for="noAnswer">noAnswer</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="noCall" id="noCall">
+                                                    <label for="noCall">noCall</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="callAgain" id="callAgain">
+                                                    <label for="callAgain">callAgain</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="checkNumber2" id="checkNumber2">
+                                                    <label for="checkNumber2">checkNumber</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="noAnswer2" id="noAnswer2">
+                                                    <label for="noAnswer2">noAnswer2</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="noCall2" id="noCall2">
+                                                    <label for="noCall2">noCall2</label>
+                                                </div>
+                                                <div class="df">
+                                                    <input type="checkbox" name="callAgain2" id="callAgain2">
+                                                    <label for="callAgain">callAgain2</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-12 postbackBorder">
+                                            <p class="sliderDesc">Send after</p>
+                                            <div class="textareaWrapper">
+                                                <div class="rangeWrapper">
+                                                    <input type="range" name="points" min="0" max="168">
+                                                    <span class="beginingScale">0</span>
+                                                    <span class="endingScale">168</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="submitPostback">
+
+                                    <input class="btn btn-default" type="submit" value="Create Pixel">
+                                </div>
+                            </form>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

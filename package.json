@@ -14,6 +14,13 @@
     "build:clean": "rimraf css",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build2": "npm-run-all build2:*",
+    "build2:html": "globstar nu-html-checker *.html",
+    "build2:sass": "node-sass --output-style compressed -o docs/css sass",
+    "build2:autoprefixer": "autoprefixer-cli docs/css/style.css",
+    "build2:copyHtml": "cp *.html docs/",
+    "build2:copyFolders": "cp -r js images docs/",
+
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
